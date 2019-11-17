@@ -9,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
      <div class="card-body">
       <h5 class="card-title">Zabezpieczenia</h5>
       <p class="card-text">Kartoteka zabezbieczeń.</p>
-      <a href="reservations" class="stretched-link"></a>
+       <a class="btn btn-info" href="reservations">Kartoteka</a>
+       <a class="btn btn-success" href="reservations/create">Nowe</a>
     </div>
     
   </div>

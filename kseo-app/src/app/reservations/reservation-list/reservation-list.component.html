@@ -1,0 +1,22 @@
+<div class="container-fluid">
+<div class="mt-2 row">
+    <div class="col col-md-3"></div>
+    <div class="col col-md-6">
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Szukaj" aria-label="Szukaj">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Szukaj</button>
+      </form>
+    </div>
+      <div class="col col-md-3">
+        <a class="nav-link btn btn-success" [routerLink]="['/reservations/create']">Nowe zabezpieczenie<span class="sr-only">(current)</span></a>
+      </div>
+</div>
+
+  
+<div class="mt-4 row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 pd-2" *ngFor="let reservationCase of  reservationList">
+    <app-reservation-case [reservationCase]="reservationCase"></app-reservation-case>
+   </div>
+ </div>
+ <p>{{reservationList}}|json</p>
+</div>

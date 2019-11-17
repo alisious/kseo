@@ -13,8 +13,19 @@ import { ReservationCase } from '../reservation-case';
     </div>
   </div>
   <div class="card-footer">
-    <button class="btn btn-primary" data-toggle="tooltip" data-placement="left" title="Dodaj EO/A" [routerLink]="['/reservations/update']">Aktualizuj</button>
-    <button class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Otwórz teczkę" [routerLink]="['/reservations/details']" >Otwórz</button>
+    <button class="btn btn-primary" 
+      data-toggle="tooltip" 
+      data-placement="left" 
+      title="Dodaj EO/A" 
+      routerLink="/reservations/update/{{reservationCase.id}}">Aktualizuj
+    </button>
+    
+    <button class="btn btn-info" 
+      data-toggle="tooltip" 
+      data-placement="right" 
+      title="Otwórz teczkę" 
+      routerLink="/reservations/details/{{reservationCase.id}}">Otwórz
+    </button>
   </div>
 </div>
   `,
