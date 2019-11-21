@@ -35,12 +35,19 @@ namespace kseo.api
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                //app.UseHsts();
 
-            app.UseHttpsRedirection();
+            }
 
-            app.UseRouting();
+            //app.UseHttpsRedirection();
 
-            app.UseAuthorization();
+            //app.UseRouting();
+
+            //app.UseAuthorization();
+
+            app.UseMvc();
 
             app.UseEndpoints(endpoints =>
             {
